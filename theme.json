@@ -1,0 +1,293 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"customTemplates": [
+		{
+			"name": "no-title",
+			"postTypes": [
+				"page"
+			],
+			"title": "No Title"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"defaultDuotone": false,
+			"defaultGradients": false,
+			"defaultPalette": false,
+			"gradients": [
+				{
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--primary) 0%,var(--wp--preset--color--quarternary) 100%)",
+					"name": "Primary to Quarternary",
+					"slug": "primary-quarternary"
+				}
+			],
+			"palette": [				
+				{
+					"color": "#0000ff",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#f7f7fb",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#EAF2FE",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#9B51E0",
+					"name": "Quarternary",
+					"slug": "quarternary"
+				},
+				{
+					"slug": "quinary",
+					"color": "#f9faf1",
+					"name": "Quinary"
+				},
+				{
+					"slug": "senary",
+					"color": "#f8f7fe",
+					"name": "Senary"
+				},
+				{
+					"color": "#0D1821",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Base",
+					"slug": "base"
+				}
+
+			]
+		},
+		"custom": {
+			"fontWeight": {
+				"thin": 100,
+				"extra-light": 200,
+				"light": 300,
+				"regular": 400,
+				"medium": 500,
+				"semi-bold": 600,
+				"bold": 700,
+				"extra-bold": 800,
+				"black": 900
+			}
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Albert Sans",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [ "file:./assets/fonts/albert-sans/AlbertSans-VariableFont_wght.woff2" ]
+						},
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Albert Sans",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/albert-sans/AlbertSans-Italic-VariableFont_wght.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Albert Sans\", sans-serif",
+					"name": "Albert Sans",
+					"slug": "albert-sans"
+				},
+				{
+					"fontFamily": "monospace",
+					"name": "Monospace",
+					"slug": "monospace"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": false,
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"min": "1rem",
+						"max": "1.125rem"
+					},
+					"size": "1.125rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"min": "1.424rem",
+						"max": "1.602rem"
+					},
+					"size": "1.602rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"min": "2.027rem",
+						"max": "2.566rem"
+					},
+					"size": "2.566rem",
+					"slug": "x-large"
+				},
+				{
+					"fluid": {
+						"min": "2.281rem",
+						"max": "2.887rem"
+					},
+					"size": "2.887rem",
+					"slug": "xx-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/post-content": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var(--wp--preset--color--primary)"
+						}
+					}
+				}
+			},
+			"core/quote": {
+				"border": {
+					"color": "var(--wp--preset--color--tertiary)",
+					"style": "solid",
+					"width": "0 0 0 4px"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--secondary)",
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				"spacing": {
+					"margin": {
+						"bottom": "35px"
+					},
+					"padding": {
+						"bottom": "30px",
+						"top": "30px"
+					}
+				}
+			}
+		},
+		"elements": {
+			"button": {
+				"border": {
+					"radius": "4px"
+				},
+				"color": {
+					"gradient": "var(--wp--preset--gradient--primary-quarternary)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"gradient": "none",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
+				":focus": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"gradient": "none",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
+				":active": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"gradient": "none",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
+				":visited": {
+					"color": {
+						"text": "var(--wp--preset--color--secondary)"
+					}
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
+					"lineHeight": "1.2"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--x-large)",
+					"lineHeight": "1.2"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--large)"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "var(--wp--custom--font-weight--medium)"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--contrast)"
+				},
+				":hover": {
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				":focus": {
+					"typography": {
+						"textDecoration": "underline dashed"
+					}
+				},
+				":active": {
+					"color": {
+						"text": "var(--wp--preset--color--senary)"
+					},
+					"typography": {
+						"textDecoration": "none"
+					}
+				},
+				"typography": {
+					"textDecoration": "underline"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--albert-sans)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"fontWeight": "var(--wp--custom--font-weight--regular)"
+		}
+	}
+}
